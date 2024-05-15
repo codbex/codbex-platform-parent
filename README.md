@@ -5,11 +5,11 @@ Parent Module for Platform Products
 
 | Property Name  | Description                      | Default Value |
 |--|--|--|
-| skip.unit.tests | Skips unit tests (*.Test)        | false |
-| skip.integration.tests | Skips integration tests  (*.IT)  | true |
-| skip.code.formatting | Skips java code formatting       | false |
-| maven.javadoc.skip | Skips javadoc                    | false |
-| license.skip | Skips license headers generation | false |
+| skip.unit.tests | Skip unit tests (*.Test)        | false |
+| skip.integration.tests | Skip integration tests  (*.IT)  | true |
+| skip.code.formatting | Skip java code formatting       | false |
+| maven.javadoc.skip | Skip javadoc                    | false |
+| license.skip | Skip license headers generation | false |
 
 ## Profiles
 
