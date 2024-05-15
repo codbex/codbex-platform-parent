@@ -22,5 +22,5 @@ Parent Module for Platform Products
 
 To activate a profile, add it to the maven command.<br>Example:
 ```
-    mvn clean install -P quick-build
+mvn clean install -P quick-build
 ```
