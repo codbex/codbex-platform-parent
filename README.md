@@ -5,8 +5,8 @@ Parent Module for Platform Products
 
 | Property Name  | Description                      | Default Value |
 |--|--|--|
-| skip.unit.tests | Skip unit tests (*.Test)        | false |
-| skip.integration.tests | Skip integration tests  (*.IT)  | true |
+| skipTests | Skip unit tests (*.Test)        | false |
+| skipITs | Skip integration tests  (*.IT)  | true |
 | skip.code.formatting | Skip java code formatting       | false |
 | maven.javadoc.skip | Skip javadoc                    | false |
 | license.skip | Skip license headers generation | false |
