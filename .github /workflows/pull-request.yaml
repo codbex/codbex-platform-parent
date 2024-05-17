@@ -1,0 +1,15 @@
+name: Pull Request - Platform
+
+on:
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  main:
+    uses: codbex/codbex-infra/.github/workflows/platform-pull-request.yaml@main
+    with:
+      platform-name: codbex-platform-parent
+      docker-build: false
+      integration-tests: false
+    secrets: inherit
