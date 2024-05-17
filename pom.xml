@@ -54,7 +54,7 @@
         <maven-dependency-plugin.version>3.6.1</maven-dependency-plugin.version>
 
         <dirigible.version>10.5.0</dirigible.version>
-        <codbex-platform-settings.version>1.0.0-SNAPSHOT</codbex-platform-settings.version>
+        <codbex-platform-settings.version>1.0.0</codbex-platform-settings.version>
 
         <formatter.java.version>${java.version}</formatter.java.version>
 
