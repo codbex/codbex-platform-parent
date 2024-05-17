@@ -24,3 +24,4 @@ To activate a profile, add it to the maven command.<br>Example:
 ```
 mvn clean install -P quick-build
 ```
+
