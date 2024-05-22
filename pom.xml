@@ -12,8 +12,8 @@
     <name>codbex - platform - parent</name>
     <description>codbex platform parent</description>
 
-    <groupId>com.codbex</groupId>
-    <artifactId>platform-parent</artifactId>
+    <groupId>com.codbex.platform</groupId>
+    <artifactId>codbex-platform-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -232,8 +232,8 @@
                     </configuration>
                     <dependencies>
                         <dependency>
-                            <groupId>com.codbex</groupId>
-                            <artifactId>platform-settings</artifactId>
+                            <groupId>com.codbex.platform</groupId>
+                            <artifactId>codbex-platform-settings</artifactId>
                             <version>${codbex-platform-settings.version}</version>
                         </dependency>
                         <dependency>
