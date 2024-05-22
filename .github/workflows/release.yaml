@@ -27,4 +27,13 @@ jobs:
         ## codbex-platform-parent - ${{ inputs.release-version }}
   
         codbex platfrom parent project.
+
+        ```xml
+        <dependency>
+            <groupId>com.codbex.platform</groupId>
+            <artifactId>codbex-platform-parent</artifactId>
+            <version>${{ inputs.release-version }}</version>
+        </dependency>
+        ```
+
     secrets: inherit
