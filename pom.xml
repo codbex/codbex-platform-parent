@@ -486,6 +486,16 @@
                 <skip.code.formatting>true</skip.code.formatting>
             </properties>
         </profile>
+        <profile>
+            <id>format</id>
+            <properties>
+                <skipTests>true</skipTests>
+                <skipITs>true</skipITs>
+                <maven.javadoc.skip>true</maven.javadoc.skip>
+                <license.skip>true</license.skip>
+                <skip.code.formatting>false</skip.code.formatting>
+            </properties>
+        </profile>
     </profiles>
 
 </project>
