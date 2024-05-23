@@ -372,16 +372,6 @@
 
     <profiles>
         <profile>
-            <id>default</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <maven.javadoc.skip>true</maven.javadoc.skip>
-                <skipTCs>true</skipTCs>
-            </properties>
-        </profile>
-        <profile>
             <id>release</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
