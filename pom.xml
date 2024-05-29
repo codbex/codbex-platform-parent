@@ -18,6 +18,42 @@
 
     <inceptionYear>2024</inceptionYear>
 
+    <properties>
+        <!-- Encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <dirigible.version>10.5.2</dirigible.version>
+        <codbex-platform-settings.version>1.0.0</codbex-platform-settings.version>
+
+        <!-- Java -->
+        <java.version>17</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+
+        <!-- Maven -->
+        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+        <maven-failsafe-plugin.version>3.2.5</maven-failsafe-plugin.version>
+        <maven-jacoco-plugin.version>0.8.12</maven-jacoco-plugin.version>
+        <maven-git-commit-id-plugin.version>4.9.10</maven-git-commit-id-plugin.version>
+        <maven-license-plugin.version>4.5</maven-license-plugin.version>
+        <maven-spring-boot-plugin.version>3.3.0</maven-spring-boot-plugin.version>
+        <maven-formatter-plugin.version>2.23.0</maven-formatter-plugin.version>
+        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+        <maven-dependency-plugin.version>3.6.1</maven-dependency-plugin.version>
+
+        <formatter.java.version>${java.version}</formatter.java.version>
+
+        <!-- Default configurations -->
+        <skipTests>false</skipTests>
+        <skipITs>true</skipITs>
+        <skip.code.formatting>false</skip.code.formatting>
+        <maven.javadoc.skip>false</maven.javadoc.skip>
+        <license.skip>false</license.skip>
+
+    </properties>
+
     <licenses>
         <license>
             <name>Eclipse Public License - v 2.0</name>
@@ -64,41 +100,7 @@
         <url>https://www.codbex.com</url>
     </organization>
 
-    <properties>
-        <!-- Encoding -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <!-- Java -->
-        <java.version>17</java.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-
-        <!-- Maven -->
-        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
-        <maven-failsafe-plugin.version>3.2.5</maven-failsafe-plugin.version>
-        <maven-jacoco-plugin.version>0.8.12</maven-jacoco-plugin.version>
-        <maven-git-commit-id-plugin.version>4.9.10</maven-git-commit-id-plugin.version>
-        <maven-license-plugin.version>4.5</maven-license-plugin.version>
-        <maven-spring-boot-plugin.version>3.3.0</maven-spring-boot-plugin.version>
-        <maven-formatter-plugin.version>2.23.0</maven-formatter-plugin.version>
-        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
-        <maven-dependency-plugin.version>3.6.1</maven-dependency-plugin.version>
-
-        <dirigible.version>10.5.1</dirigible.version>
-        <codbex-platform-settings.version>1.0.0</codbex-platform-settings.version>
-
-        <formatter.java.version>${java.version}</formatter.java.version>
-
-        <!-- Default configurations -->
-        <skipTests>false</skipTests>
-        <skipITs>true</skipITs>
-        <skip.code.formatting>false</skip.code.formatting>
-        <maven.javadoc.skip>false</maven.javadoc.skip>
-        <license.skip>false</license.skip>
-
-    </properties>
 
     <dependencyManagement>
         <dependencies>
