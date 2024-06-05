@@ -119,8 +119,16 @@
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
-                <filtering>true</filtering>
+                <filtering>false</filtering>
             </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>dirigible.properties</include>
+                </includes>
+            </resource>
+
         </resources>
         <plugins>
             <plugin>
