@@ -40,7 +40,7 @@
         <maven-license-plugin.version>4.5</maven-license-plugin.version>
         <maven-spring-boot-plugin.version>3.3.1</maven-spring-boot-plugin.version>
         <maven-formatter-plugin.version>2.23.0</maven-formatter-plugin.version>
-        <maven-javadoc-plugin.version>3.7.0</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.version>3.8.0</maven-javadoc-plugin.version>
         <maven-dependency-plugin.version>3.7.1</maven-dependency-plugin.version>
 
         <formatter.java.version>${java.version}</formatter.java.version>
