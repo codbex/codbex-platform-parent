@@ -21,6 +21,7 @@ jobs:
       platform-name: codbex-platform-parent
       maven-release: true
       docker-release: false
+      scan-docker-image: false
       release-version: ${{ inputs.release-version }}
       snapshot-version: ${{ inputs.snapshot-version }}
       release-content: |
