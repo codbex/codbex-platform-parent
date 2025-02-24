@@ -5,35 +5,47 @@ on:
     inputs:
       release-version:
         description: Release Version (could match the Dirigible version for more clearance)
-        required: true
-        default: 10.6.50
+        required: false
       snapshot-version:
         description: Snapshot Version
         required: true
         default: 11.0.0-SNAPSHOT
 
-run-name: 'version set to ${{ inputs.release-version }} for release'
+run-name: 'version set to ${{ inputs.release-version || needs.extract-version.outputs.release-version }} for release'
 
 jobs:
+  extract-version:
+    runs-on: ubuntu-latest
+    outputs:
+      release-version: ${{ steps.get-version.outputs.version }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract dirigible.version from pom.xml
+        id: get-version
+        run: echo "version=$(mvn help:evaluate -Dexpression=dirigible.version -q -DforceStdout)" >> "$GITHUB_OUTPUT"
+
   main:
+    needs: extract-version
     uses: codbex/codbex-infra/.github/workflows/platform-release.yaml@main
     with:
       platform-name: codbex-platform-parent
       maven-release: true
       docker-release: false
       scan-docker-image: false
-      release-version: ${{ inputs.release-version }}
+      release-version: ${{ inputs.release-version || needs.extract-version.outputs.release-version }}
       snapshot-version: ${{ inputs.snapshot-version }}
       release-content: |
-        ## codbex-platform-parent - ${{ inputs.release-version }}
-  
-        codbex platfrom parent project.
+        ## codbex-platform-parent - ${{ inputs.release-version || needs.extract-version.outputs.release-version }}
+        
+        codbex platform parent project.
 
         ```xml
         <dependency>
             <groupId>com.codbex.platform</groupId>
             <artifactId>codbex-platform-parent</artifactId>
-            <version>${{ inputs.release-version }}</version>
+            <version>${{ inputs.release-version || needs.extract-version.outputs.release-version }}</version>
         </dependency>
         ```
 
