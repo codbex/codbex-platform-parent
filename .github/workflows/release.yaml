@@ -5,13 +5,11 @@ on:
     inputs:
       release-version:
         description: Release Version (could match the Dirigible version for more clearance)
-        required: false
+        required: false=
       snapshot-version:
         description: Snapshot Version
         required: true
         default: 12.0.0-SNAPSHOT
-
-run-name: 'version set to ${{ inputs.release-version || needs.extract-version.outputs.release-version }} for release'
 
 jobs:
   extract-version:
@@ -34,18 +32,18 @@ jobs:
       maven-release: true
       docker-release: false
       scan-docker-image: false
-      release-version: ${{ inputs.release-version || needs.extract-version.outputs.release-version }}
+      release-version: ${{ inputs.release-version != '' && inputs.release-version || needs.extract-version.outputs.release-version }}
       snapshot-version: ${{ inputs.snapshot-version }}
       release-content: |
-        ## codbex-platform-parent - ${{ inputs.release-version || needs.extract-version.outputs.release-version }}
-        
+        ## codbex-platform-parent - ${{ inputs.release-version != '' && inputs.release-version || needs.extract-version.outputs.release-version }}
+
         codbex platform parent project.
 
         ```xml
         <dependency>
             <groupId>com.codbex.platform</groupId>
             <artifactId>codbex-platform-parent</artifactId>
-            <version>${{ inputs.release-version || needs.extract-version.outputs.release-version }}</version>
+            <version>${{ inputs.release-version != '' && inputs.release-version || needs.extract-version.outputs.release-version }}</version>
         </dependency>
         ```
 
