@@ -5,7 +5,7 @@ on:
     inputs:
       release-version:
         description: Release Version (could match the Dirigible version for more clearance)
-        required: false=
+        required: false
       snapshot-version:
         description: Snapshot Version
         required: true
