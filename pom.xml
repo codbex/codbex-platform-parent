@@ -295,9 +295,33 @@
                     </executions>
                 </plugin>
                 <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>3.3.0</version>
+                    <executions>
+                        <execution>
+                            <id>extract-fat-jar-name</id>
+                            <goals>
+                                <goal>regex-property</goal>
+                            </goals>
+                            <phase>validate</phase>
+                            <configuration>
+                                <name>fat.jar.name</name>
+                                <regex>(.+)-application(.+)</regex>
+                                <replacement>$1$2</replacement>
+                                <value>${project.artifactId}-${project.version}</value>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${maven-spring-boot-plugin.version}</version>
+                    <configuration>
+                        <finalName>${fat.jar.name}</finalName>
+                    </configuration>
                     <executions>
                         <execution>
                             <goals>
