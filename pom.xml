@@ -186,6 +186,7 @@
                     <configuration>
                         <skipTests>${skipTests}</skipTests>
                         <failIfNoTests>false</failIfNoTests>
+                        <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -195,6 +196,7 @@
                     <configuration>
                         <skipITs>${skipITs}</skipITs>
                         <failIfNoTests>false</failIfNoTests>
+                        <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
                     </configuration>
                     <executions>
                         <execution>
