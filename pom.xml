@@ -154,7 +154,7 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>dirigible.properties</include>
-                    <include>dirigible-overrides.properties</include>
+                    <include>dirigible-commons.properties</include>
                 </includes>
             </resource>
 
