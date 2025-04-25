@@ -23,7 +23,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <dirigible.version>11.35.0</dirigible.version>
+        <dirigible.version>11.37.0</dirigible.version>
         <codbex-platform-settings.version>1.0.0</codbex-platform-settings.version>
 
         <!-- Java -->
@@ -137,6 +137,10 @@
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>org.eclipse.dirigible</groupId>
+            <artifactId>dirigible-commons-resources</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -150,6 +154,7 @@
                 <filtering>true</filtering>
                 <includes>
                     <include>dirigible.properties</include>
+                    <include>dirigible-commons.properties</include>
                 </includes>
             </resource>
 
