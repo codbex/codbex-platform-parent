@@ -30,6 +30,7 @@ jobs:
     with:
       platform-name: codbex-platform-parent
       maven-release: true
+      code-scans: false
       docker-release: false
       scan-docker-image: false
       release-version: ${{ inputs.release-version != '' && inputs.release-version || needs.extract-version.outputs.release-version }}
