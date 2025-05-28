@@ -6,10 +6,11 @@ on:
       - main
 
 jobs:
-  main:
+  build:
     uses: codbex/codbex-infra/.github/workflows/platform-build.yaml@main
     with:
       platform-name: codbex-platform-parent
       docker-build: false
       integration-tests: false
+      code-scans: false
     secrets: inherit

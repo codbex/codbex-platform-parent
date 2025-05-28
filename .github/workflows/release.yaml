@@ -24,7 +24,7 @@ jobs:
         id: get-version
         run: echo "version=$(mvn help:evaluate -Dexpression=dirigible.version -q -DforceStdout)" >> "$GITHUB_OUTPUT"
 
-  main:
+  release:
     needs: extract-version
     uses: codbex/codbex-infra/.github/workflows/platform-release.yaml@main
     with:
