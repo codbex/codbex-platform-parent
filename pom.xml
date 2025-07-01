@@ -100,6 +100,17 @@
         <url>https://www.codbex.com</url>
     </organization>
 
+    <developers>
+        <developer>
+            <id>office</id>
+            <name>Office</name>
+            <email>office@codbex.com</email>
+            <url>https://github.com/jordanpavlov</url>
+            <organization>codbex</organization>
+            <organizationUrl>https://www.codbex.com</organizationUrl>
+        </developer>
+    </developers>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
