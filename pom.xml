@@ -448,7 +448,7 @@
                         <version>0.8.0</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <publishingServerId>central</publishingServerId>
+                            <publishingServerId>ossrh</publishingServerId>
                             <autoPublish>true</autoPublish>
                         </configuration>
                     </plugin>
