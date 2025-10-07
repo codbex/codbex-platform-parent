@@ -23,7 +23,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <dirigible.version>12.17.0</dirigible.version>
+        <dirigible.version>12.21.0</dirigible.version>
         <codbex-platform-settings.version>1.0.0</codbex-platform-settings.version>
 
         <!-- Java -->
