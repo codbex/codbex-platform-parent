@@ -23,7 +23,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <dirigible.version>14.35.0</dirigible.version>
+        <dirigible.version>14.68.0</dirigible.version>
         <codbex-platform-settings.version>1.0.0</codbex-platform-settings.version>
 
         <!-- Java -->
@@ -38,7 +38,7 @@
         <maven-jacoco-plugin.version>0.8.15</maven-jacoco-plugin.version>
         <maven-git-commit-id-plugin.version>4.9.10</maven-git-commit-id-plugin.version>
         <maven-license-plugin.version>5.1.2</maven-license-plugin.version>
-        <maven-spring-boot-plugin.version>4.1.0</maven-spring-boot-plugin.version>
+        <maven-spring-boot-plugin.version>4.1.1</maven-spring-boot-plugin.version>
         <maven-formatter-plugin.version>2.29.0</maven-formatter-plugin.version>
         <maven-javadoc-plugin.version>3.12.0</maven-javadoc-plugin.version>
         <maven-dependency-plugin.version>3.11.0</maven-dependency-plugin.version>
